@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BDFBC54759167A59C0CAE94CFA6DC63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2F7EF8C7EEF08EFA117A9F2FD6ED5FFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		39C1E37FA38CFFD5BFDBFDC6B132761B /* Pods-iOSAuthenticator_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7DF5A2C0AB360C398541C5E072F1660 /* Pods-iOSAuthenticator_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6280F5EF65E04993CD03E64A7E3648F8 /* Pods-iOSAuthenticator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2868F326458703D24BDE3D06FA2366A6 /* Pods-iOSAuthenticator_Example-dummy.m */; };
+		80A017497638AE7515D18F936595D1D1 /* Pods-iOSAuthenticator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 658552E0EFA3EE9EEB214545353B3991 /* Pods-iOSAuthenticator_Tests-dummy.m */; };
+		ABEFFBB06261F7913514151A2879278B /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110CE5A3CB6E2AFFCB75872DE8630A81 /* ReplaceMe.swift */; };
+		B58FB1DFC4F798CF93AF314833E855A0 /* Pods-iOSAuthenticator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E19480C34D17D48D60E68A21F3980EE4 /* Pods-iOSAuthenticator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D42E168ECCAAAE3CA0CABA9FB0D9DA5A /* iOSAuthenticator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8949D9D5665058E826A7F6074F3BBD3 /* iOSAuthenticator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7D6A499DFA23FB16929E042BE82D834 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E5BAE72A942A4358A7D90EA85D9E45F7 /* iOSAuthenticator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C8A3156E0B9905D125697BBA498F1D /* iOSAuthenticator-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		050F671CAD1D676E1A97E6F76AC5EC2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABA039574BC6D686730E42C5C4C87D9D;
+			remoteInfo = iOSAuthenticator;
+		};
+		5B08D11D46730DFF819563D2797162B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A628D062B9298C45EE531BBD0D644F1;
+			remoteInfo = "Pods-iOSAuthenticator_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F534BB0F9D158674F5AEF33FBA11359 /* iOSAuthenticator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = iOSAuthenticator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		110CE5A3CB6E2AFFCB75872DE8630A81 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = iOSAuthenticator/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		163D42EC54D9BE36DE93AAE3A2E6BD8B /* Pods-iOSAuthenticator_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSAuthenticator_Tests-resources.sh"; sourceTree = "<group>"; };
+		17C6947536DE72A34706A7992BC3F43C /* Pods-iOSAuthenticator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOSAuthenticator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1BCD9345FBEF3AAC5EC1AE6916209BBB /* Pods-iOSAuthenticator_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOSAuthenticator_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1DD337319B340514F2550413ADE5F6E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		231411CF0BF1A2F9EE7343795BA8F88B /* Pods-iOSAuthenticator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSAuthenticator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2868F326458703D24BDE3D06FA2366A6 /* Pods-iOSAuthenticator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSAuthenticator_Example-dummy.m"; sourceTree = "<group>"; };
+		2F71C9472EFC12CDB9D340A3AE0CCF28 /* Pods-iOSAuthenticator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iOSAuthenticator_Example.modulemap"; sourceTree = "<group>"; };
+		3CEACED3465FD610EEC89C79A6AEBB56 /* iOSAuthenticator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSAuthenticator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CC32E20342466F2E02149170402396 /* Pods-iOSAuthenticator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSAuthenticator_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		55D37E664F37A6BA68257B4157D3438B /* iOSAuthenticator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iOSAuthenticator.modulemap; sourceTree = "<group>"; };
+		5AA93CC9CF724B895A4CEF4F417FE492 /* Pods-iOSAuthenticator_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSAuthenticator_Example-resources.sh"; sourceTree = "<group>"; };
+		658552E0EFA3EE9EEB214545353B3991 /* Pods-iOSAuthenticator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSAuthenticator_Tests-dummy.m"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		68F04F8D4338BF315D8E9EB4394C650F /* Pods-iOSAuthenticator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSAuthenticator_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7B58A9CEC9EAA130F03832CC9F14F8B9 /* iOSAuthenticator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSAuthenticator-prefix.pch"; sourceTree = "<group>"; };
+		7EF2B5E72F340799AF424880B01CA20D /* Pods-iOSAuthenticator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSAuthenticator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		89990DB12C1992C51074CF447A1516A1 /* Pods-iOSAuthenticator_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iOSAuthenticator_Tests.modulemap"; sourceTree = "<group>"; };
+		9107B57CC5548FC310735BECD94FDDAB /* Pods-iOSAuthenticator_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSAuthenticator_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A393BA836526406A69B7AF601552646 /* Pods-iOSAuthenticator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSAuthenticator_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A79BAD751BD764256DCF4837B7B2F701 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8949D9D5665058E826A7F6074F3BBD3 /* iOSAuthenticator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSAuthenticator-umbrella.h"; sourceTree = "<group>"; };
+		A89EB13B510CA11224CFFBF72CB48F0E /* Pods_iOSAuthenticator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSAuthenticator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED351A3F95B10306D5C6ECD0789EA47 /* Pods-iOSAuthenticator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSAuthenticator_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C4A0D3E62D400B5D5CCE0B6FCD9ACB1D /* iOSAuthenticator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSAuthenticator.xcconfig; sourceTree = "<group>"; };
+		CAA85825E609AFF5FC403AF3EBB291E0 /* Pods-iOSAuthenticator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSAuthenticator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DE3595EF97FD8A913626A05656DE0CC1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E19480C34D17D48D60E68A21F3980EE4 /* Pods-iOSAuthenticator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOSAuthenticator_Example-umbrella.h"; sourceTree = "<group>"; };
+		E1A2191BD56BBE661013BE47B8CFFADE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E5C8A3156E0B9905D125697BBA498F1D /* iOSAuthenticator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOSAuthenticator-dummy.m"; sourceTree = "<group>"; };
+		EC68C9A9F34DD38458035E312E04D5C3 /* Pods_iOSAuthenticator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSAuthenticator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DF5A2C0AB360C398541C5E072F1660 /* Pods-iOSAuthenticator_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOSAuthenticator_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F98DE81CC2F505AF03BBD99152EC1A87 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F20CE5DA9E313011B2B134721EFB843 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D6A499DFA23FB16929E042BE82D834 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93A0CB05DFB837181E5222A93F8F38FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7EF8C7EEF08EFA117A9F2FD6ED5FFE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8BE246BC79639A358089FE1095BB96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BDFBC54759167A59C0CAE94CFA6DC63 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BE3695E57A95D600B2849A23B47C7C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CEACED3465FD610EEC89C79A6AEBB56 /* iOSAuthenticator.framework */,
+				EC68C9A9F34DD38458035E312E04D5C3 /* Pods_iOSAuthenticator_Example.framework */,
+				A89EB13B510CA11224CFFBF72CB48F0E /* Pods_iOSAuthenticator_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15B2D09A13C65C8ED68E2100455D9592 /* iOSAuthenticator */ = {
+			isa = PBXGroup;
+			children = (
+				110CE5A3CB6E2AFFCB75872DE8630A81 /* ReplaceMe.swift */,
+				2A171A2F2088E5B1005CB10F /* Classes */,
+				DD03423FF4853DE0D64A84CAA21E4B00 /* Pod */,
+				BF94B699558BC497ED3BD711CD4F9657 /* Support Files */,
+			);
+			name = iOSAuthenticator;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		16A2B044B9A0126EC38B423CC5A46170 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DD648712D5812363918320EE5B0D64F /* Pods-iOSAuthenticator_Example */,
+				D0CDC7B74C781E1AA2F87235BEF2D4D5 /* Pods-iOSAuthenticator_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2A171A2F2088E5B1005CB10F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2A171A302088E5B8005CB10F /* Errors */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2A171A302088E5B8005CB10F /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		4CB36C32EE9412DBAB885B8400B954D2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15B2D09A13C65C8ED68E2100455D9592 /* iOSAuthenticator */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		5DD648712D5812363918320EE5B0D64F /* Pods-iOSAuthenticator_Example */ = {
+			isa = PBXGroup;
+			children = (
+				F98DE81CC2F505AF03BBD99152EC1A87 /* Info.plist */,
+				2F71C9472EFC12CDB9D340A3AE0CCF28 /* Pods-iOSAuthenticator_Example.modulemap */,
+				17C6947536DE72A34706A7992BC3F43C /* Pods-iOSAuthenticator_Example-acknowledgements.markdown */,
+				7EF2B5E72F340799AF424880B01CA20D /* Pods-iOSAuthenticator_Example-acknowledgements.plist */,
+				2868F326458703D24BDE3D06FA2366A6 /* Pods-iOSAuthenticator_Example-dummy.m */,
+				68F04F8D4338BF315D8E9EB4394C650F /* Pods-iOSAuthenticator_Example-frameworks.sh */,
+				5AA93CC9CF724B895A4CEF4F417FE492 /* Pods-iOSAuthenticator_Example-resources.sh */,
+				E19480C34D17D48D60E68A21F3980EE4 /* Pods-iOSAuthenticator_Example-umbrella.h */,
+				BED351A3F95B10306D5C6ECD0789EA47 /* Pods-iOSAuthenticator_Example.debug.xcconfig */,
+				9A393BA836526406A69B7AF601552646 /* Pods-iOSAuthenticator_Example.release.xcconfig */,
+			);
+			name = "Pods-iOSAuthenticator_Example";
+			path = "Target Support Files/Pods-iOSAuthenticator_Example";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				4CB36C32EE9412DBAB885B8400B954D2 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				0BE3695E57A95D600B2849A23B47C7C2 /* Products */,
+				16A2B044B9A0126EC38B423CC5A46170 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF94B699558BC497ED3BD711CD4F9657 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE3595EF97FD8A913626A05656DE0CC1 /* Info.plist */,
+				55D37E664F37A6BA68257B4157D3438B /* iOSAuthenticator.modulemap */,
+				C4A0D3E62D400B5D5CCE0B6FCD9ACB1D /* iOSAuthenticator.xcconfig */,
+				E5C8A3156E0B9905D125697BBA498F1D /* iOSAuthenticator-dummy.m */,
+				7B58A9CEC9EAA130F03832CC9F14F8B9 /* iOSAuthenticator-prefix.pch */,
+				A8949D9D5665058E826A7F6074F3BBD3 /* iOSAuthenticator-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/iOSAuthenticator";
+			sourceTree = "<group>";
+		};
+		D0CDC7B74C781E1AA2F87235BEF2D4D5 /* Pods-iOSAuthenticator_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A79BAD751BD764256DCF4837B7B2F701 /* Info.plist */,
+				89990DB12C1992C51074CF447A1516A1 /* Pods-iOSAuthenticator_Tests.modulemap */,
+				1BCD9345FBEF3AAC5EC1AE6916209BBB /* Pods-iOSAuthenticator_Tests-acknowledgements.markdown */,
+				CAA85825E609AFF5FC403AF3EBB291E0 /* Pods-iOSAuthenticator_Tests-acknowledgements.plist */,
+				658552E0EFA3EE9EEB214545353B3991 /* Pods-iOSAuthenticator_Tests-dummy.m */,
+				9107B57CC5548FC310735BECD94FDDAB /* Pods-iOSAuthenticator_Tests-frameworks.sh */,
+				163D42EC54D9BE36DE93AAE3A2E6BD8B /* Pods-iOSAuthenticator_Tests-resources.sh */,
+				F7DF5A2C0AB360C398541C5E072F1660 /* Pods-iOSAuthenticator_Tests-umbrella.h */,
+				231411CF0BF1A2F9EE7343795BA8F88B /* Pods-iOSAuthenticator_Tests.debug.xcconfig */,
+				52CC32E20342466F2E02149170402396 /* Pods-iOSAuthenticator_Tests.release.xcconfig */,
+			);
+			name = "Pods-iOSAuthenticator_Tests";
+			path = "Target Support Files/Pods-iOSAuthenticator_Tests";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DD03423FF4853DE0D64A84CAA21E4B00 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0F534BB0F9D158674F5AEF33FBA11359 /* iOSAuthenticator.podspec */,
+				1DD337319B340514F2550413ADE5F6E9 /* LICENSE */,
+				E1A2191BD56BBE661013BE47B8CFFADE /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		79A7E439499B1BE4C96EAFF2CCED2311 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C1E37FA38CFFD5BFDBFDC6B132761B /* Pods-iOSAuthenticator_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82975440A2B116D7A9BE3B5F475C6336 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D42E168ECCAAAE3CA0CABA9FB0D9DA5A /* iOSAuthenticator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDAD8EBB131C038CE78B2F364866888 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B58FB1DFC4F798CF93AF314833E855A0 /* Pods-iOSAuthenticator_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3A628D062B9298C45EE531BBD0D644F1 /* Pods-iOSAuthenticator_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D72DC1BF0A839DCA7DC3C44CF3F67A0E /* Build configuration list for PBXNativeTarget "Pods-iOSAuthenticator_Example" */;
+			buildPhases = (
+				86A12A493C05770A13D0C39039DFC651 /* Sources */,
+				BD8BE246BC79639A358089FE1095BB96 /* Frameworks */,
+				FDDAD8EBB131C038CE78B2F364866888 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4E59484BC363465438D38643C2F8BB2 /* PBXTargetDependency */,
+			);
+			name = "Pods-iOSAuthenticator_Example";
+			productName = "Pods-iOSAuthenticator_Example";
+			productReference = EC68C9A9F34DD38458035E312E04D5C3 /* Pods_iOSAuthenticator_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		93868A88DD2F1696DBB363ED8A8DE6B1 /* Pods-iOSAuthenticator_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4F5D1F1B0CB700928423F4ECA8F4DCB /* Build configuration list for PBXNativeTarget "Pods-iOSAuthenticator_Tests" */;
+			buildPhases = (
+				8365773600213B3F1456F6C7889C0256 /* Sources */,
+				3F20CE5DA9E313011B2B134721EFB843 /* Frameworks */,
+				79A7E439499B1BE4C96EAFF2CCED2311 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41536D3773BD6EE70F116B6EB4B55849 /* PBXTargetDependency */,
+			);
+			name = "Pods-iOSAuthenticator_Tests";
+			productName = "Pods-iOSAuthenticator_Tests";
+			productReference = A89EB13B510CA11224CFFBF72CB48F0E /* Pods_iOSAuthenticator_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ABA039574BC6D686730E42C5C4C87D9D /* iOSAuthenticator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 987435A176BDD46B612434E755FC438D /* Build configuration list for PBXNativeTarget "iOSAuthenticator" */;
+			buildPhases = (
+				132350FBB0013941154E7C2BBC14AFC9 /* Sources */,
+				93A0CB05DFB837181E5222A93F8F38FF /* Frameworks */,
+				82975440A2B116D7A9BE3B5F475C6336 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSAuthenticator;
+			productName = iOSAuthenticator;
+			productReference = 3CEACED3465FD610EEC89C79A6AEBB56 /* iOSAuthenticator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0BE3695E57A95D600B2849A23B47C7C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABA039574BC6D686730E42C5C4C87D9D /* iOSAuthenticator */,
+				3A628D062B9298C45EE531BBD0D644F1 /* Pods-iOSAuthenticator_Example */,
+				93868A88DD2F1696DBB363ED8A8DE6B1 /* Pods-iOSAuthenticator_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		132350FBB0013941154E7C2BBC14AFC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5BAE72A942A4358A7D90EA85D9E45F7 /* iOSAuthenticator-dummy.m in Sources */,
+				ABEFFBB06261F7913514151A2879278B /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8365773600213B3F1456F6C7889C0256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A017497638AE7515D18F936595D1D1 /* Pods-iOSAuthenticator_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A12A493C05770A13D0C39039DFC651 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6280F5EF65E04993CD03E64A7E3648F8 /* Pods-iOSAuthenticator_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41536D3773BD6EE70F116B6EB4B55849 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-iOSAuthenticator_Example";
+			target = 3A628D062B9298C45EE531BBD0D644F1 /* Pods-iOSAuthenticator_Example */;
+			targetProxy = 5B08D11D46730DFF819563D2797162B6 /* PBXContainerItemProxy */;
+		};
+		D4E59484BC363465438D38643C2F8BB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iOSAuthenticator;
+			target = ABA039574BC6D686730E42C5C4C87D9D /* iOSAuthenticator */;
+			targetProxy = 050F671CAD1D676E1A97E6F76AC5EC2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		39ACA8B25C2D67433361A77174138B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4A0D3E62D400B5D5CCE0B6FCD9ACB1D /* iOSAuthenticator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSAuthenticator/iOSAuthenticator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iOSAuthenticator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/iOSAuthenticator/iOSAuthenticator.modulemap";
+				PRODUCT_MODULE_NAME = iOSAuthenticator;
+				PRODUCT_NAME = iOSAuthenticator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		55EE3935E2AE55F09B9FEA4BE7A3CC2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52CC32E20342466F2E02149170402396 /* Pods-iOSAuthenticator_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOSAuthenticator_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOSAuthenticator_Tests/Pods-iOSAuthenticator_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B4BD8D9C5D1FBDF0473D513823FFA954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4A0D3E62D400B5D5CCE0B6FCD9ACB1D /* iOSAuthenticator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSAuthenticator/iOSAuthenticator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iOSAuthenticator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/iOSAuthenticator/iOSAuthenticator.modulemap";
+				PRODUCT_MODULE_NAME = iOSAuthenticator;
+				PRODUCT_NAME = iOSAuthenticator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA9A3EC3619EFC76937DC1984EB8CCCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A393BA836526406A69B7AF601552646 /* Pods-iOSAuthenticator_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOSAuthenticator_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOSAuthenticator_Example/Pods-iOSAuthenticator_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F672DFEE941D8ECC22AAF1879C81FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BED351A3F95B10306D5C6ECD0789EA47 /* Pods-iOSAuthenticator_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOSAuthenticator_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOSAuthenticator_Example/Pods-iOSAuthenticator_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FFE8EA248B0E7711C0055CDEBD298552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 231411CF0BF1A2F9EE7343795BA8F88B /* Pods-iOSAuthenticator_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOSAuthenticator_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOSAuthenticator_Tests/Pods-iOSAuthenticator_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
+				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		987435A176BDD46B612434E755FC438D /* Build configuration list for PBXNativeTarget "iOSAuthenticator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39ACA8B25C2D67433361A77174138B45 /* Debug */,
+				B4BD8D9C5D1FBDF0473D513823FFA954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4F5D1F1B0CB700928423F4ECA8F4DCB /* Build configuration list for PBXNativeTarget "Pods-iOSAuthenticator_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE8EA248B0E7711C0055CDEBD298552 /* Debug */,
+				55EE3935E2AE55F09B9FEA4BE7A3CC2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D72DC1BF0A839DCA7DC3C44CF3F67A0E /* Build configuration list for PBXNativeTarget "Pods-iOSAuthenticator_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F672DFEE941D8ECC22AAF1879C81FE9A /* Debug */,
+				CA9A3EC3619EFC76937DC1984EB8CCCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

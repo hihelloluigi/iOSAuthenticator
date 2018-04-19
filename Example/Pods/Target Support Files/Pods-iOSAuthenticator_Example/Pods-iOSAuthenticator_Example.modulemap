@@ -1,0 +1,6 @@
+framework module Pods_iOSAuthenticator_Example {
+  umbrella header "Pods-iOSAuthenticator_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

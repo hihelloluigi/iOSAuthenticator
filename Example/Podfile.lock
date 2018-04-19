@@ -1,0 +1,16 @@
+PODS:
+  - iOSAuthenticator (0.1.0)
+
+DEPENDENCIES:
+  - iOSAuthenticator (from `../`)
+
+EXTERNAL SOURCES:
+  iOSAuthenticator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  iOSAuthenticator: 99f92d9462b0957c38c1ce88a6d478c4c0083949
+
+PODFILE CHECKSUM: 344a3492861faf7f11541751f241f35a55f58565
+
+COCOAPODS: 1.5.0
