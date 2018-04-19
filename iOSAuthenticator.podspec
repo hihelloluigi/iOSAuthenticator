@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'iOSAuthenticator'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of iOSAuthenticator.'
+  s.summary          = 'A simple wrapper on AuthLocation'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,15 +21,15 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Luigi Aiello/iOSAuthenticator'
+  s.homepage         = 'https://github.com/mo3bius/iOSAuthenticator'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Luigi Aiello' => 'luigiaiello97@gmail.com' }
-  s.source           = { :git => 'https://github.com/Luigi Aiello/iOSAuthenticator.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/mo3bius/iOSAuthenticator.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-
+  s.ios.deployment_target = '9.0'
+  s.swift_version = '4.1'
   s.source_files = 'iOSAuthenticator/Classes/**/*'
   
   # s.resource_bundles = {
