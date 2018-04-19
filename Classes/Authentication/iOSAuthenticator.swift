@@ -101,11 +101,12 @@ public class iOSAuthenticator: NSObject {
      */
     public class func biometricType() -> iOSBiometryType {
         
+        let context = LAContext()
         var type: iOSBiometryType = .notAvailable
         
-        if LAContext().canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) {
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) {
             if #available(iOS 11.0, *) {
-                switch LAContext().biometryType {
+                switch context.biometryType {
                 case .touchID:
                     type = .touchID
                 case .faceID:
@@ -145,7 +146,7 @@ public class iOSAuthenticator: NSObject {
         
         let context = LAContext()
         iOSAuthenticator.shared.authenticationContext = context
-
+        
         //Cancel button title
         if #available(iOS 10.0, *) {
             context.localizedCancelTitle = cancelTitle
