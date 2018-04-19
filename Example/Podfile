@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'iOSAuthenticator_Example' do
+  pod 'iOSAuthenticator', :path => '../'
+
+  target 'iOSAuthenticator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
