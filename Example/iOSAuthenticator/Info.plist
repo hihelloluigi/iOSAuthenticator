@@ -35,5 +35,7 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 	</array>
+	<key>NSFaceIDUsageDescription</key>
+	<string>I need access to protect your data from bad people</string>
 </dict>
 </plist>
