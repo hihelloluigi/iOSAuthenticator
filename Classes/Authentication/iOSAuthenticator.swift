@@ -142,7 +142,7 @@ public class iOSAuthenticator: NSObject {
      - Parameter success:           Callback if authentication is successful.
      - Parameter failure:           Callback if authentication is not successful.
      */
-    public class func authenticateWithPasscode(reason: String, cancelTitle: String? = "", success successBlock:@escaping AuthenticationSuccess, failure failureBlock:@escaping AuthenticationFailure) {
+    public class func authenticateWithBiometricsAndPasscode(reason: String, cancelTitle: String? = "", success successBlock:@escaping AuthenticationSuccess, failure failureBlock:@escaping AuthenticationFailure) {
         
         let context = LAContext()
         iOSAuthenticator.shared.authenticationContext = context
@@ -167,7 +167,7 @@ public class iOSAuthenticator: NSObject {
      - Parameter success:           Callback if authentication is successful.
      - Parameter failure:           Callback if authentication is not successful.
      */
-    public class func authenticateWithBiometrics(reason: String, fallbackTitle: String? = "", cancelTitle: String? = "", fallback: Fallback?, success successBlock:@escaping AuthenticationSuccess, failure failureBlock:@escaping AuthenticationFailure) {
+    public class func authenticateWithBiometricsAndFallback(reason: String, fallbackTitle: String? = "", cancelTitle: String? = "", fallback: Fallback?, success successBlock:@escaping AuthenticationSuccess, failure failureBlock:@escaping AuthenticationFailure) {
         
         let context = LAContext()
         iOSAuthenticator.shared.authenticationContext = context
