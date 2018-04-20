@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A6A42C32088EBFB006432E8 /* AuthenticationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A42C22088EBFB006432E8 /* AuthenticationVC.swift */; };
+		2A6A42C62088EC62006432E8 /* RoundedOutlineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A42C52088EC62006432E8 /* RoundedOutlineButton.swift */; };
+		2A6A42C82088EE6E006432E8 /* UIImage+XT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A42C72088EE6E006432E8 /* UIImage+XT.swift */; };
+		2A6A42CA2088EE84006432E8 /* UIColor+XT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A42C92088EE84006432E8 /* UIColor+XT.swift */; };
+		2A6A42CC2089D0F3006432E8 /* LoggedInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A42CB2089D0F3006432E8 /* LoggedInVC.swift */; };
+		2A6A42CE2089D0FC006432E8 /* FallbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A42CD2089D0FC006432E8 /* FallbackVC.swift */; };
+		2A6A42D12089D1BE006432E8 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A42D02089D1BE006432E8 /* SettingCell.swift */; };
+		2A6A42D32089D1C9006432E8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A42D22089D1C9006432E8 /* Config.swift */; };
 		45B5FDE7B8083613628C94B8 /* Pods_iOSAuthenticator_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2102C492132102948BD7702 /* Pods_iOSAuthenticator_Example.framework */; };
 		5601E768F1AEA9FFBE4D395C /* Pods_iOSAuthenticator_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555089A32AA7032A1CEB1AE3 /* Pods_iOSAuthenticator_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -29,11 +36,18 @@
 
 /* Begin PBXFileReference section */
 		123ED993D2F999F1542DCA49 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2A6A42C22088EBFB006432E8 /* AuthenticationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationVC.swift; sourceTree = "<group>"; };
+		2A6A42C52088EC62006432E8 /* RoundedOutlineButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedOutlineButton.swift; sourceTree = "<group>"; };
+		2A6A42C72088EE6E006432E8 /* UIImage+XT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+XT.swift"; sourceTree = "<group>"; };
+		2A6A42C92088EE84006432E8 /* UIColor+XT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+XT.swift"; sourceTree = "<group>"; };
+		2A6A42CB2089D0F3006432E8 /* LoggedInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInVC.swift; sourceTree = "<group>"; };
+		2A6A42CD2089D0FC006432E8 /* FallbackVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallbackVC.swift; sourceTree = "<group>"; };
+		2A6A42D02089D1BE006432E8 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		2A6A42D22089D1C9006432E8 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		555089A32AA7032A1CEB1AE3 /* Pods_iOSAuthenticator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSAuthenticator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* iOSAuthenticator_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAuthenticator_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -69,6 +83,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A171A372088E7FF005CB10F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A6A42BE2088E978006432E8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		2A6A42BF2088EB06006432E8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2A6A42D42089D1CC006432E8 /* NSUserDefaults */,
+				2A6A42C02088EB0C006432E8 /* Controllers */,
+				2A6A42CF2089D19C006432E8 /* Cells */,
+				2A6A42C42088EC46006432E8 /* Custom Objects */,
+				2A6A42C12088EB13006432E8 /* Extensions */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		2A6A42C02088EB0C006432E8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2A6A42C22088EBFB006432E8 /* AuthenticationVC.swift */,
+				2A6A42CB2089D0F3006432E8 /* LoggedInVC.swift */,
+				2A6A42CD2089D0FC006432E8 /* FallbackVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2A6A42C12088EB13006432E8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2A6A42C72088EE6E006432E8 /* UIImage+XT.swift */,
+				2A6A42C92088EE84006432E8 /* UIColor+XT.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		2A6A42C42088EC46006432E8 /* Custom Objects */ = {
+			isa = PBXGroup;
+			children = (
+				2A6A42C52088EC62006432E8 /* RoundedOutlineButton.swift */,
+			);
+			name = "Custom Objects";
+			sourceTree = "<group>";
+		};
+		2A6A42CF2089D19C006432E8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2A6A42D02089D1BE006432E8 /* SettingCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		2A6A42D42089D1CC006432E8 /* NSUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				2A6A42D22089D1C9006432E8 /* Config.swift */,
+			);
+			name = NSUserDefaults;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +180,9 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				2A6A42BF2088EB06006432E8 /* Source */,
+				2A6A42BE2088E978006432E8 /* Storyboard */,
+				2A171A372088E7FF005CB10F /* Resources */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for iOSAuthenticator";
@@ -324,8 +409,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				2A6A42CA2088EE84006432E8 /* UIColor+XT.swift in Sources */,
+				2A6A42C32088EBFB006432E8 /* AuthenticationVC.swift in Sources */,
+				2A6A42D32089D1C9006432E8 /* Config.swift in Sources */,
+				2A6A42D12089D1BE006432E8 /* SettingCell.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				2A6A42CC2089D0F3006432E8 /* LoggedInVC.swift in Sources */,
+				2A6A42C62088EC62006432E8 /* RoundedOutlineButton.swift in Sources */,
+				2A6A42CE2089D0FC006432E8 /* FallbackVC.swift in Sources */,
+				2A6A42C82088EE6E006432E8 /* UIImage+XT.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
