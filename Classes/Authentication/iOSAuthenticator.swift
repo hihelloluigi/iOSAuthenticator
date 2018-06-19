@@ -212,13 +212,20 @@ public class iOSAuthenticator: NSObject {
 //MARK:- Private
 extension iOSAuthenticator {
     /// evaluate policy
-    private func evaluate(policy: LAPolicy, with context: LAContext, reason: String, fallback: Fallback? = nil, success successBlock:@escaping AuthenticationSuccess, failure failureBlock:@escaping AuthenticationFailure) {
+    private func evaluate(policy: LAPolicy, with context: LAContext, reason: String, fallback: Fallback? = nil, success successBlock: @escaping AuthenticationSuccess, failure failureBlock: @escaping AuthenticationFailure) {
         
         context.evaluatePolicy(policy, localizedReason: reason) { (success, err) in
             DispatchQueue.main.async {
-                if success { successBlock() }
-                else {
-                    let errorType = AuthenticationError(error: err as! LAError, fallback: fallback)
+                if success {
+                    successBlock()
+
+                } else {
+                    if let error = err as? LAError, Int32(error.errorCode) == kLAErrorUserFallback,
+                        let fallback = fallback {
+                        fallback()
+                        return
+                    } 
+                    let errorType = AuthenticationError(error: err as! LAError)
                     
                     failureBlock(errorType)
                 }

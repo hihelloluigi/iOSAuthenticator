@@ -115,9 +115,6 @@ class AuthenticationVC: UIViewController {
             self.navigateToLoggedInVC()
             print("Success")
         }) { (error) in
-            guard error != AuthenticationError.userFallback else {
-                return
-            }
             print("Error \(error)")
         }
     }

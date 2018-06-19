@@ -45,11 +45,10 @@ public enum AuthenticationError {
     case touchIDNotEnrolled
     case unkown
 
-    public static func `init`(error: LAError, fallback: Fallback?) -> AuthenticationError {
+    public static func `init`(error: LAError) -> AuthenticationError {
         
         let code = Int32(error.errorCode)
         switch code {
-            
         case kLAErrorAuthenticationFailed:
             return failed
         case kLAErrorAppCancel:
@@ -65,10 +64,9 @@ public enum AuthenticationError {
         case kLAErrorUserCancel:
             return userCancel
         case kLAErrorUserFallback:
-            fallback?()
             return userFallback
         default:
-           return evaluatePolicyFailErrorMessageForLA(errorCode: code)
+           return AuthenticationError.evaluatePolicyFailErrorMessageForLA(errorCode: code)
         }
     }
     
