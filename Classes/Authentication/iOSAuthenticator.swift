@@ -56,13 +56,13 @@ public class iOSAuthenticator: NSObject {
      */
     public class func canAuthenticate() -> Bool {
         
-        var isBiometricAuthenticationAvailable = false
+        var isAuthenticationAvailable = false
         var authError: NSError? = nil
         
         if LAContext().canEvaluatePolicy(.deviceOwnerAuthentication, error: &authError) {
-            isBiometricAuthenticationAvailable = (authError == nil)
+            isAuthenticationAvailable = (authError == nil)
         }
-        return isBiometricAuthenticationAvailable
+        return isAuthenticationAvailable
     }
     
     /**
