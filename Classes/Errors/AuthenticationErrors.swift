@@ -37,7 +37,7 @@ public enum AuthenticationError {
     case systemCancel
     case userCancel
     case userFallback
-    case biometryNotAvailabel
+    case biometryNotAvailable
     case biometryLockout
     case biometryNotEnrolled
     case touchIDNotAvailable
@@ -74,7 +74,7 @@ public enum AuthenticationError {
         if #available(iOS 11.0, macOS 10.13, *) {
             switch errorCode {
             case kLAErrorBiometryNotAvailable:
-                return .biometryNotAvailabel
+                return .biometryNotAvailable
             case kLAErrorBiometryLockout:
                 return .biometryLockout
             case kLAErrorBiometryNotEnrolled:
