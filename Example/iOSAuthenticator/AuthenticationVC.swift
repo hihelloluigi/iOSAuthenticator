@@ -108,7 +108,7 @@ class AuthenticationVC: UIViewController {
         }
     }
     @IBAction func secondButtonDidTap(_ sender: Any) {
-        iOSAuthenticator.authenticateWithBiometricsAndFallback(reason: "Please help me to protect your data", fallback: {
+        iOSAuthenticator.authenticateWithBiometricsAndFallback(reason: "Please help me to protect your data", fallbackTitle: nil, cancelTitle: "cancella", fallback: {
             print("Fallback")
             self.navigateToFallbackVC()
         }, success: {
