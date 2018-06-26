@@ -48,7 +48,8 @@ public class iOSAuthenticator: NSObject {
     
     //MARK:- Variables
     private var authenticationContext: LAContext?
-    
+    private var customView: UIView?
+
     /**
      Returns a value that indicate if device is unlockable by: Passcode, Touch ID or Face ID
      
@@ -182,43 +183,59 @@ public class iOSAuthenticator: NSObject {
         //Authenticate
         iOSAuthenticator.shared.evaluate(policy: .deviceOwnerAuthenticationWithBiometrics, with: context, reason: reason, fallback: fallback, success: successBlock, failure: failureBlock)
     }
-    
-    
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    //TO DO - Improve
-    public class func preventBackgroundSnapshot() {
+
+    public static func preventBackgroundSnapshot(customView: UIView?) {
         iOSAuthenticator.shared.registerNotification()
+        iOSAuthenticator.shared.customView = customView
+    }
+    public static func removePreventBackgroundSnapshot() {
+        iOSAuthenticator.shared.removeNotification()
+        iOSAuthenticator.shared.customView = nil
     }
     private func registerNotification() {
         NotificationCenter.default.addObserver(self, selector: #selector(applicationDidEnterBackground(_:)), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(applicationDidBecomeActive(_:)), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationWillEnterForgraund(_:)), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
+    }
+    private func removeNotification() {
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
     }
     
     @objc private func applicationDidEnterBackground(_ notification: NSNotification) {
         guard let window = UIApplication.shared.windows.first else {
             return
         }
-        window.isHidden = true
+
+        if let customView = customView {
+            window.addSubview(customView)
+        } else {
+            window.isHidden = true
+        }
     }
-    @objc private func applicationDidBecomeActive(_ notification: NSNotification) {
+
+    @objc private func applicationWillEnterForgraund(_ notification: NSNotification) {
         guard let window = UIApplication.shared.windows.first else {
             return
         }
-        window.isHidden = false
+        if let customView = customView {
+            for view in window.subviews where view == customView {
+                view.removeFromSuperview()
+            }
+        } else {
+            window.isHidden = false
+        }
     }
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }
 
 //MARK:- Private
 extension iOSAuthenticator {
     /// evaluate policy
     private func evaluate(policy: LAPolicy, with context: LAContext, reason: String, fallback: Fallback? = nil, success successBlock: @escaping AuthenticationSuccess, failure failureBlock: @escaping AuthenticationFailure) {
-        
+
         context.evaluatePolicy(policy, localizedReason: reason) { (success, err) in
             DispatchQueue.main.async {
                 if success {
                     successBlock()
-
                 } else {
                     if let error = err as? LAError, Int32(error.errorCode) == kLAErrorUserFallback,
                         let fallback = fallback {
