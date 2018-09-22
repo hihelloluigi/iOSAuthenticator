@@ -67,7 +67,7 @@ class LoggedInVC: UIViewController {
         }
     }
     private func setupTableView() {
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 70
         tableView.tableFooterView = UIView()
         tableView.alwaysBounceVertical = true

@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0BDFBC54759167A59C0CAE94CFA6DC63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		2A171A332088E680005CB10F /* AuthenticationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A171A322088E680005CB10F /* AuthenticationErrors.swift */; };
-		2A171A352088E68C005CB10F /* iOSAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A171A342088E68C005CB10F /* iOSAuthenticator.swift */; };
+		2AFCEBA720EB790400A8940A /* iOSAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFCEBA620EB790400A8940A /* iOSAuthenticator.swift */; };
+		2AFCEBA920EB791100A8940A /* AuthenticationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFCEBA820EB791100A8940A /* AuthenticationErrors.swift */; };
 		2F7EF8C7EEF08EFA117A9F2FD6ED5FFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		39C1E37FA38CFFD5BFDBFDC6B132761B /* Pods-iOSAuthenticator_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7DF5A2C0AB360C398541C5E072F1660 /* Pods-iOSAuthenticator_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6280F5EF65E04993CD03E64A7E3648F8 /* Pods-iOSAuthenticator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2868F326458703D24BDE3D06FA2366A6 /* Pods-iOSAuthenticator_Example-dummy.m */; };
@@ -45,8 +45,8 @@
 		1DD337319B340514F2550413ADE5F6E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		231411CF0BF1A2F9EE7343795BA8F88B /* Pods-iOSAuthenticator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSAuthenticator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2868F326458703D24BDE3D06FA2366A6 /* Pods-iOSAuthenticator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSAuthenticator_Example-dummy.m"; sourceTree = "<group>"; };
-		2A171A322088E680005CB10F /* AuthenticationErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationErrors.swift; sourceTree = "<group>"; };
-		2A171A342088E68C005CB10F /* iOSAuthenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSAuthenticator.swift; sourceTree = "<group>"; };
+		2AFCEBA620EB790400A8940A /* iOSAuthenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iOSAuthenticator.swift; path = iOSAuthenticator/Classes/Authentication/iOSAuthenticator.swift; sourceTree = "<group>"; };
+		2AFCEBA820EB791100A8940A /* AuthenticationErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationErrors.swift; path = iOSAuthenticator/Classes/Errors/AuthenticationErrors.swift; sourceTree = "<group>"; };
 		2F71C9472EFC12CDB9D340A3AE0CCF28 /* Pods-iOSAuthenticator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iOSAuthenticator_Example.modulemap"; sourceTree = "<group>"; };
 		3CEACED3465FD610EEC89C79A6AEBB56 /* iOSAuthenticator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSAuthenticator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CC32E20342466F2E02149170402396 /* Pods-iOSAuthenticator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSAuthenticator_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,7 +117,8 @@
 		15B2D09A13C65C8ED68E2100455D9592 /* iOSAuthenticator */ = {
 			isa = PBXGroup;
 			children = (
-				2A171A2F2088E5B1005CB10F /* Classes */,
+				2AFCEBA820EB791100A8940A /* AuthenticationErrors.swift */,
+				2AFCEBA620EB790400A8940A /* iOSAuthenticator.swift */,
 				DD03423FF4853DE0D64A84CAA21E4B00 /* Pod */,
 				BF94B699558BC497ED3BD711CD4F9657 /* Support Files */,
 			);
@@ -132,31 +133,6 @@
 				D0CDC7B74C781E1AA2F87235BEF2D4D5 /* Pods-iOSAuthenticator_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		2A171A2F2088E5B1005CB10F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				2A171A312088E62E005CB10F /* Authentication */,
-				2A171A302088E5B8005CB10F /* Errors */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		2A171A302088E5B8005CB10F /* Errors */ = {
-			isa = PBXGroup;
-			children = (
-				2A171A322088E680005CB10F /* AuthenticationErrors.swift */,
-			);
-			path = Errors;
-			sourceTree = "<group>";
-		};
-		2A171A312088E62E005CB10F /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				2A171A342088E68C005CB10F /* iOSAuthenticator.swift */,
-			);
-			path = Authentication;
 			sourceTree = "<group>";
 		};
 		4CB36C32EE9412DBAB885B8400B954D2 /* Development Pods */ = {
@@ -347,7 +323,7 @@
 				LastUpgradeCheck = 0940;
 				TargetAttributes = {
 					ABA039574BC6D686730E42C5C4C87D9D = {
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -375,9 +351,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A171A352088E68C005CB10F /* iOSAuthenticator.swift in Sources */,
-				2A171A332088E680005CB10F /* AuthenticationErrors.swift in Sources */,
 				E5BAE72A942A4358A7D90EA85D9E45F7 /* iOSAuthenticator-dummy.m in Sources */,
+				2AFCEBA920EB791100A8940A /* AuthenticationErrors.swift in Sources */,
+				2AFCEBA720EB790400A8940A /* iOSAuthenticator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +417,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -630,7 +606,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
