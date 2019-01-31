@@ -26,10 +26,10 @@
 import UIKit
 import LocalAuthentication
 
-public enum iOSBiometryType {
-    case touchID
-    case faceID
-    case notAvailable
+public enum iOSBiometryType: String {
+    case touchID = "Touch ID"
+    case faceID = "Face ID"
+    case notAvailable = "Not available"
 }
 
 /// Success block
