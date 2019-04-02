@@ -114,6 +114,8 @@ public class iOSAuthenticator: NSObject {
                     type = .faceID
                 case .none:
                     type = .notAvailable
+                @unknown default:
+                    fatalError()
                 }
             } else {
                 return .touchID
