@@ -26,10 +26,10 @@
 import UIKit
 import LocalAuthentication
 
-public enum iOSBiometryType: String {
-    case touchID = "Touch ID"
-    case faceID = "Face ID"
-    case notAvailable = "Not available"
+@objc public enum iOSBiometryType: Int {
+    case touchID
+    case faceID
+    case notAvailable
 }
 
 /// Success block
@@ -100,7 +100,7 @@ public class iOSAuthenticator: NSObject {
      
      - returns: A custom enum (iOSBiometryType) that specify if the biometric authenticator is: Available, Touch ID or Face ID
      */
-    public class func biometricType() -> iOSBiometryType {
+    @objc public class func biometricType() -> iOSBiometryType {
 
         let context = LAContext()
         var type: iOSBiometryType = .notAvailable
